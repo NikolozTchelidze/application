@@ -1,0 +1,10 @@
+<h2>Post's</h2>
+<div class="container">
+    <div *ngFor="let post of posts">
+    <h1>Title: {{post.title}}</h1>
+    <p>Author: {{post.author}}</p>
+    <p>Content: {{post.content}}</p>
+    <p>Date/Time: {{post.dateTime}}</p>
+    <a routerLink="/post">read more</a>
+    </div>
+</div>    

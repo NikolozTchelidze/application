@@ -1,0 +1,10 @@
+   <div class="create-container">
+    <h1>Create your blog post</h1>
+    <form (submit)="onPostAdd(postForm)" #postForm="ngForm"> 
+        <input type="text" placeholder="title" name="title" ngModel #title="ngModel" required>
+        <input type="text" placeholder="author" name="author" ngModel #author="ngModel" required>
+        <textarea  rows="10" placeholder="post content" name="content" ngModel #content="ngModel" required></textarea>
+        <button type="submit">Add post</button>
+    </form>
+    </div>
+<app-post-list></app-post-list>
